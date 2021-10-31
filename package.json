@@ -1,0 +1,10 @@
+{
+  "name": "vuex-fast",
+  "version": "2.1.6",
+  "main": "index.js",
+  "author": "joenix",
+  "license": "MIT",
+  "dependencies": {
+    "foreach.js": "^2.1.6"
+  }
+}
