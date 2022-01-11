@@ -39,16 +39,16 @@ const store = createStore({ modules });
 ```js
 // State
 numeric: {
-  a: 10,
-  b: 20
+  a: 100,
+  b: 200
 }
 
 // Action
-calculate() {
+calculate({ state }) {
   return {
     numeric: {
-      a: 100,
-      b: a + 200
+      a: state.a,
+      b: state.a + state.b
     }
   }
 }
