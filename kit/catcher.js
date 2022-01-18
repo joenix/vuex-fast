@@ -4,7 +4,7 @@ export default async (handler, root, params) => {
   try {
     result = await handler(root, params);
   } catch (error) {
-    result = error;
+    result = { error };
   }
 
   return result;
