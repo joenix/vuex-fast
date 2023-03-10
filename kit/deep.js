@@ -1,5 +1,5 @@
 // Use Foreach
-import foreach from "./foreach";
+import foreach from './foreach';
 
 // Check Constructor of Target
 function check(target, type = Object) {

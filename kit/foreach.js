@@ -1,3 +1,3 @@
-import foreach from "foreach.js";
+import foreach from 'foreach.js';
 
 export default foreach;

@@ -5,6 +5,6 @@
   "author": "joenix",
   "license": "MIT",
   "dependencies": {
-    "foreach.js": "^2.1.6"
+    "foreach.js": "^2.2.0"
   }
 }

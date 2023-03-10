@@ -1,19 +1,21 @@
-import foreach from "./foreach";
+import foreach from './foreach';
 
-import deepeach from "./deepeach";
+import deepeach from './deepeach';
 
-import merge from "./merge";
+import merge from './merge';
 
-import deep from "./deep";
+import flat from './flat';
 
-import reset from "./reset";
+import deep from './deep';
 
-import is from "./is";
+import reset from './reset';
 
-import noop from "./noop";
+import is from './is';
 
-import catcher from "./catcher";
+import noop from './noop';
 
-import * as store from "./store";
+import catcher from './catcher';
 
-export { foreach, deepeach, merge, deep, reset, is, noop, catcher, store };
+import * as store from './store';
+
+export { foreach, deepeach, merge, flat, deep, reset, is, noop, catcher, store };

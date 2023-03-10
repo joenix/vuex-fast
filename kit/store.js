@@ -1,14 +1,14 @@
 // Use Each
-import foreach from "./foreach";
+import foreach from './foreach';
 
 // Use Merge
-import merge from "./merge";
+import merge from './merge';
 
 // Use Reset
-import reset from "./reset";
+import reset from './reset';
 
 // Use Catcher
-import catcher from "./catcher";
+import catcher from './catcher';
 
 /**
  * States
@@ -17,7 +17,7 @@ import catcher from "./catcher";
 export function states(settings = {}) {
   return {
     error: false,
-    ...settings
+    ...settings,
   };
 }
 
@@ -29,11 +29,11 @@ export function actions(settings = {}) {
   // Set Json
   const json = {
     async STATE_UPDATE({ commit }, data) {
-      return await commit("STATE_UPDATE", data);
+      return await commit('STATE_UPDATE', data);
     },
     async STATE_CLEAR({ commit, state }, namespace) {
-      return await commit("STATE_UPDATE", reset(state[namespace]));
-    }
+      return await commit('STATE_UPDATE', reset(state[namespace]));
+    },
   };
 
   // Loop Settings
@@ -47,7 +47,7 @@ export function actions(settings = {}) {
         console.log(result.errMsg);
       }
       // Update State when on Error
-      root.commit("STATE_UPDATE", result);
+      root.commit('STATE_UPDATE', result);
       // Return for Logic
       return result;
     };
@@ -66,7 +66,7 @@ export function mutations(settings = {}) {
   const json = {
     STATE_UPDATE(state, data) {
       return merge(state, data, true);
-    }
+    },
   };
 
   // Loop Settings

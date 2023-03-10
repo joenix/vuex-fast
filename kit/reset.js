@@ -24,7 +24,7 @@ function transfer(value, custom = {}) {
       [Function]: () => {},
       [Promise]: new Promise(noop),
     },
-    custom
+    custom,
   );
 
   // Get Default of Constructor
