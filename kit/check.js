@@ -1,0 +1,1 @@
+export default value => [undefined, null].includes(value);
